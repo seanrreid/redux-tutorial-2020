@@ -1,5 +1,3 @@
-import { ADD_TODO, TOGGLE_TODO } from "../actionTypes";
-
 const initialState = {
   allIds: [],
   byIds: {},
@@ -7,7 +5,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case ADD_TODO: {
+    case "ADD_TODO": {
       // add todo logic
       const { id, content } = action.payload;
       return {
@@ -22,7 +20,7 @@ export default function (state = initialState, action) {
         },
       };
     }
-    case TOGGLE_TODO: {
+    case "TOGGLE_TODO": {
       console.log("toggling todo");
       // toggle todo logic
       const { id } = action.payload;
