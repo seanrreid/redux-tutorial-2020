@@ -1,5 +1,5 @@
 export const VISIBILITY_FILTERS = {
-  ALL: "all",
-  COMPLETED: "completed",
-  INCOMPLETE: "incomplete"
+  ALL: "All of it",
+  COMPLETED: "Stuff I've done",
+  INCOMPLETE: "Crap I still need to do"
 };
